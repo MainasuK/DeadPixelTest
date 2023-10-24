@@ -54,6 +54,7 @@ jobs:
         with:
           token: '${{ github.token }}'
           environment-url: https://github.com/MainasuK/DeadPixelTest/releases/tag/${{ env.GITHUB_TAG_NAME }}
+          log-url: https://github.com/MainasuK/DeadPixelTest/releases/tag/${{ env.GITHUB_TAG_NAME }}
           deployment-id: ${{ steps.deployment.outputs.deployment_id }}
           state: 'success'
 
