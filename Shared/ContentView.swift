@@ -5,6 +5,7 @@
 //  Created by Cirno MainasuK on 2020/12/5.
 //
 
+import UIKit
 import SwiftUI
 
 struct ContentView: View {
@@ -19,7 +20,15 @@ struct ContentView: View {
         .pink,
         .purple,
         .orange,
-        .gray
+        .gray,
+        Color(UIColor.systemRed),
+        Color(UIColor.systemGreen),
+        Color(UIColor.systemBlue),
+        Color(UIColor.systemYellow),
+        Color(UIColor.systemPink),
+        Color(UIColor.systemPurple),
+        Color(UIColor.systemOrange),
+        Color(UIColor.systemGray),
     ]
     
     @State var didTapped = false
