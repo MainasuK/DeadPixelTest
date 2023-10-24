@@ -25,7 +25,7 @@ jobs:
         id: deployment
         with:
           token: '${{ github.token }}'
-          environment-url: https://github.com/DimensionDev/Mask-X-iOS/tags
+          environment-url: https://github.com/MainasuK/DeadPixelTest/tags
           environment: staging
 
       - name: Update deployment status (in_progress)
