@@ -3,6 +3,8 @@
 set -xeu
 set -o pipefail
 
+echo "GITHUB_TAG_NAME=build-$(date +'%Y-%m-%d-%H.%M.%S')" >> $GITHUB_ENV
+
 # gem install bundler
 # bundle install
 
