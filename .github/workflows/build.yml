@@ -25,7 +25,7 @@ jobs:
         id: deployment
         with:
           token: '${{ github.token }}'
-          environment-url: https://github.com/DimensionDev/Mask-X-iOS/tags
+          environment-url: https://github.com/MainasuK/DeadPixelTest/tags
           environment: staging
 
       - name: Update deployment status (in_progress)
@@ -53,7 +53,8 @@ jobs:
         uses: chrnorm/deployment-status@v2
         with:
           token: '${{ github.token }}'
-          environment-url: https://github.com/DimensionDev/Mask-X-iOS/releases/tag/${{ env.GITHUB_TAG_NAME }}
+          environment-url: https://github.com/MainasuK/DeadPixelTest/releases/tag/${{ env.GITHUB_TAG_NAME }}
+          log-url: https://github.com/MainasuK/DeadPixelTest/releases/tag/${{ env.GITHUB_TAG_NAME }}
           deployment-id: ${{ steps.deployment.outputs.deployment_id }}
           state: 'success'
 
